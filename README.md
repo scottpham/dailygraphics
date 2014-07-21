@@ -1,3 +1,5 @@
+(This is NPR's original readme)
+
 dailygraphics
 =============
 
