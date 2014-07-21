@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 """
 Project-wide application configuration.
 """
@@ -17,8 +18,8 @@ PROJECT_SLUG = 'dailygraphics'
 ASSETS_SLUG = PROJECT_SLUG
 
 # The name of the repository containing the source
-REPOSITORY_NAME = 'dailygraphics'
-REPOSITORY_URL = 'git@github.com:nprapps/%s.git' % REPOSITORY_NAME
+REPOSITORY_NAME = 'test'
+REPOSITORY_URL = 'git@github.com:scottpham/%s.git' % REPOSITORY_NAME
 REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
 
 # Path to the folder containing the graphics
@@ -27,8 +28,8 @@ GRAPHICS_PATH = os.path.abspath('../graphics')
 """
 DEPLOYMENT
 """
-PRODUCTION_S3_BUCKETS = ['apps.npr.org', 'apps2.npr.org']
-STAGING_S3_BUCKETS = ['stage-apps.npr.org']
+PRODUCTION_S3_BUCKETS = ['nbccharts']
+STAGING_S3_BUCKETS = ['nbccharts']
 ASSETS_S3_BUCKET = 'assets.apps.npr.org'
 
 # These variables will be set at runtime. See configure_targets() below
