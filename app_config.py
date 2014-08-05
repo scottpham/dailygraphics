@@ -49,15 +49,15 @@ def configure_targets(deployment_target):
 
     if deployment_target == 'production':
         S3_BUCKETS = PRODUCTION_S3_BUCKETS
-        S3_BASE_URL = 'http://%s/%s' % (S3_BUCKETS[0], PROJECT_SLUG)
+        S3_BASE_URL = 'http://s3-us-west-1.amazonaws.com/%s/%s' % (S3_BUCKETS[0], PROJECT_SLUG)
         DEBUG = False
     elif deployment_target == 'staging':
         S3_BUCKETS = STAGING_S3_BUCKETS
-        S3_BASE_URL = 'http://%s/%s' % (S3_BUCKETS[0], PROJECT_SLUG)
+        S3_BASE_URL = 'http://s3-us-west-1.amazonaws.com/%s/%s' % (S3_BUCKETS[0], PROJECT_SLUG)
         DEBUG = True
     else:
         S3_BUCKETS = []
-        S3_BASE_URL = 'http://127.0.0.1:8000'
+        S3_BASE_URL = 'http://localhost:8000'
         DEBUG = True
 
     DEPLOYMENT_TARGET = deployment_target
